@@ -9,7 +9,7 @@ import Logs from "./pages/Logs";
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token") || null);
 
-  // 🔥 IMPORTANT: App open hone par token remove ho jaye (fresh login required)
+  
   useEffect(() => {
     const savedToken = localStorage.getItem("token");
     if (!savedToken) {
